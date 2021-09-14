@@ -4,6 +4,46 @@ html { box-sizing: border-box; }
 
 body {
 	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.kalendar {
+	display: grid;
+	grid-template-columns: repeat(7, 50px);
+	grid-template-rows: repeat(6, 50px);
+	gap: 2px;
+}
+
+.zahlavi, button, .predchozi, .nasledujici {
+	width: 50px;
+	height: 50px;
+}
+
+.zahlavi {
+	background-color: orangered;
+	color: white;
+	text-align: center;
+	padding: 17px 0;
+}
+.nasledujici, .predchozi {
+	background-color: lightgray;
+	border: solid 1px grey;
+	text-align: center;
+	padding: 17px 0;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+button {
+	background-color: white;
+	border: solid 1px grey;
+}
+
+button:hover {
+	background-color: #ececec;
 }
 
 /* ---------------------------------------------------- */
